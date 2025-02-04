@@ -10,5 +10,5 @@ litros = input("Introduza os litros gastos:")
 litros = float(litros)
 
 
-print(f"A média de combutivel por km foi de: {(litros*100)/km} km/l")
+print(f"A média de combutivel por km foi de: {((litros*100)/km)} km/l")
 
