@@ -2,8 +2,6 @@
 converta o resultado para segundos, devolvendo o output para o ecrã (deverá ser
 criado o ficheiro ex06.py).'''
 
-import math
-
 horas = input("Introduza o numero de horas:")
 horas = int(horas)
 

@@ -3,8 +3,6 @@ combustível consumido por um carro num percurso. Calcula o consumo km/l e escre
 uma mensagem de acordo com o resultado obtido. (deverá ser criado o ficheiro
 ex07.py).'''
 
-import math
-
 km = input("Introduza o numero de kilometros:")
 km = float(km)
 
