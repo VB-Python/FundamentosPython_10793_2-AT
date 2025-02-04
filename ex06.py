@@ -5,13 +5,13 @@ criado o ficheiro ex06.py).'''
 import math
 
 horas = input("Introduza o numero de horas:")
-horas = float(horas)
+horas = int(horas)
 
 minutos = input("Introduza o numero de minutos:")
-minutos = float(minutos)
+minutos = int(minutos)
 
 segundos = input("Introduza o numero de segundos:")
-segundos = float(segundos)
+segundos = int(segundos)
 
 print(f"o total em segundos é:{(horas*60*60)+(minutos*60)+segundos}")
 
