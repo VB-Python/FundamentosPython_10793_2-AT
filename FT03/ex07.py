@@ -4,7 +4,7 @@ divisível por 100.'''
 
 ano = int(input("Introduza um ano a fim de averiguar se é Bissexto:"))
 
-if ano % 400 == 0:
+if ano % 400 == 0: # não funciona
     print("O ano" , ano, "é Bissexto")
 else:
     print("O ano" , ano, "não é Bissexto")
@@ -22,7 +22,7 @@ else:
 
 
 ano = int(input("Introduza um ano a fim de averiguar se é Bissexto:"))
-if ano % 400 == 0: # or ano % 100 != 0 and ano % 4 ==0:
+if ano % 400 == 0 or ano % 100 != 0 and ano % 4 ==0: # primeira condição não funciona
     print("O ano" , ano, "é Bissexto")
 else:
     print("O ano" , ano, "não é Bissexto")
