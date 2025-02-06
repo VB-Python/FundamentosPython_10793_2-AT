@@ -10,6 +10,8 @@ numero2     = int(input("Insira um segundo valor:"))
 conta       = float
 
 
+
+
 if operacao == '+':
     print("Resultado da operação é:" ,numero1 + numero2,)
 elif operacao == '-':
