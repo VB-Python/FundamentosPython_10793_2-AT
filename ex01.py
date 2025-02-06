@@ -17,10 +17,11 @@ match produto:
     case 1:
         print("Preço final, com 10% de desconto:" ,preco - (preco * 10 / 100), "€")
     case 2:
-        print("Preço final, com 15% de desconto:" ,preco - (preco * 10 / 100), "€")
+        print("Preço final, com 15% de desconto:" ,preco - (preco * 15 / 100), "€")
     case 3:
-        print("Preço final, com 20% de desconto:" ,preco - (preco * 10 / 100), "€")
+        print("Preço final, com 20% de desconto:" ,preco - (preco * 20 / 100), "€")
     case 4:
-        print("Preço final, sem desconto:" ,preco - (preco), "€")
+        print("Preço final, sem desconto:" ,preco, "€")
     case _:
         print("Código inválido")
+        
