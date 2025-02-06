@@ -10,10 +10,10 @@ Estadocivil = float(input("Introduza o seu Estado Civil: "))
 
 
 match Estadocivil:
-    case S:
-        print("Solteiro/a")
-    case C:
-        print("Casado/a")
+ #   case S:
+ #       print("Solteiro/a")
+ #   case C:
+ #       print("Casado/a")
     case D:
         print("Divorciado/a")
     case V:
