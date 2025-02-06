@@ -17,8 +17,8 @@ elif nreal2 > nreal1:
         print("O segundo numero introduzido" ,nreal2, "é o maior dos 3 numeros")
     elif nreal3 > nreal1:
         print("O terceiro numero introduzido" ,nreal3, "é o maior dos 3 numeros")
+elif nreal1 == nreal2 == nreal3:
+    print("Os numeros introduzidos foram iguais: " ,nreal3,)
 else:
     print("O terceiro numero introduzido" ,nreal3, "é o maior dos 3 numeros")
-
-
 
