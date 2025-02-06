@@ -2,11 +2,11 @@
 uma pessoa.'''
 
 
-print("Estado Civil: /n S. Solteiro;\n C. Casado;\n D. Divorciado;\n V. Viúvo.")
+print("Estado Civil: \n S. Solteiro/a;\n C. Casado/a;\n D. Divorciado/a;\n V. Viúvo/a.")
 
 
 
-Estadocivil = float(input("Introduza o seu Estado Civil: "))
+Estadocivil = str(input("Introduza o seu Estado Civil: "))
 
 
 match Estadocivil:
