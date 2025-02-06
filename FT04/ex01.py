@@ -2,7 +2,7 @@
 forma numérica.'''
 
 
-mes = float(input("Introduza o numero do mês: "))
+mes = int(input("Introduza o numero do mês: "))
 
 
 match mes:
