@@ -23,18 +23,18 @@ imc = peso/(altura*altura)
 print("Resultado e Classificação do seu IMC:")
 
 if imc < 17:
-    print(nome,"," , idade, "anos, ",peso, "Kg, e" ,altura, "metros de altura :" "IMC<17 - Muito abaixo do peso ideal")
+    print(nome,"," , idade, "anos, ",peso, "Kg, e" ,altura, "metros de altura :" , imc, "IMC<17 - Muito abaixo do peso ideal")
 elif 17 <= imc and imc < 18.5:
-    print(nome,"," , idade, "anos, ",peso, "Kg, e" ,altura, "metros de altura :" "17<=IMC<18,5 - Abaixo do peso ideal")
+    print(nome,"," , idade, "anos, ",peso, "Kg, e" ,altura, "metros de altura :" , imc, "17<=IMC<18,5 - Abaixo do peso ideal")
 elif 18.5 <= imc and imc < 25:
-    print(nome,"," , idade, "anos, ",peso, "Kg, e" ,altura, "metros de altura :" "18,5<=IMC<25 - Peso normal")
+    print(nome,"," , idade, "anos, ",peso, "Kg, e" ,altura, "metros de altura :" , imc, "18,5<=IMC<25 - Peso normal")
 elif 25 <= imc and imc < 30:
-    print(nome,"," , idade, "anos, ",peso, "Kg, e" ,altura, "metros de altura :" "25<=IMC<30 - Acima do peso ideal")
+    print(nome,"," , idade, "anos, ",peso, "Kg, e" ,altura, "metros de altura :" , imc, "25<=IMC<30 - Acima do peso ideal")
 elif 30 <= imc and imc < 35:
-    print(nome,"," , idade, "anos, ",peso, "Kg, e" ,altura, "metros de altura :" "30<=IMC<35 - Obesidade I")
+    print(nome,"," , idade, "anos, ",peso, "Kg, e" ,altura, "metros de altura :" , imc, "30<=IMC<35 - Obesidade I")
 elif 35 <= imc and imc < 40:
-    print(nome,"," , idade, "anos, ",peso, "Kg, e" ,altura, "metros de altura :" "35<=IMC<40 - Obesidade II (severa)")
+    print(nome,"," , idade, "anos, ",peso, "Kg, e" ,altura, "metros de altura :" , imc, "35<=IMC<40 - Obesidade II (severa)")
 elif imc >= 40:
-    print(nome,"," , idade, "anos, ",peso, "Kg, e" ,altura, "metros de altura :" "IMC>=40 - Obesidade III (mórbida)")
+    print(nome,"," , idade, "anos, ",peso, "Kg, e" ,altura, "metros de altura :" , imc, "IMC>=40 - Obesidade III (mórbida)")
 
 
