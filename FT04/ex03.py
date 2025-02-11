@@ -3,7 +3,7 @@ média.'''
 
 print("Introduza 4 numeros Inteiros e Positivos para se calcular a média")
 
-n1 = print(int(input("Introduza um primeiro numero")))
+n1 = int(input("Introduza um primeiro numero"))
     while n1<0:
         n1 = print(int("Numero negativo, Introduza um primeiro numero novamente"))
     else
