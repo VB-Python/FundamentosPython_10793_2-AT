@@ -1,7 +1,7 @@
 '''Escreve um programa que coloque no ecrã a tabuada do número 5.'''
 
 
-print("tabuada do número 5\n")
+print("\nTabuada do número 5:")
 numero1 = 0
 tabuada = 5
 multiplicacao = 5
