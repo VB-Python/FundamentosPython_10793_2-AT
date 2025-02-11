@@ -11,4 +11,3 @@ while numero1 <= 10:
     print(f"{tabuada} x {numero1} = {multiplicacao}")
     numero1 = numero1 + 1
 
-    
