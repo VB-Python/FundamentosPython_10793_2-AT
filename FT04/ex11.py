@@ -7,7 +7,7 @@ soma = 0
 multiplicacao = 1
 for i in range(1,N):
     soma += i
-    multiplicacao = multiplicacao * i
+    multiplicacao *= i
 
 print(f"soma: {soma}")
 print(f"multiplicacao: {multiplicacao}")
