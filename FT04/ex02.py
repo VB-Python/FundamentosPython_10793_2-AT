@@ -9,7 +9,7 @@ print("Estado Civil: \n S. Solteiro/a;\n C. Casado/a;\n D. Divorciado/a;\n V. Vi
 Estadocivil = str(input("Introduza o seu Estado Civil: "))
 
 
-match Estadocivil:
+match Estadocivil.upper():  #passa minusculas para maiusculas
     case "S":
         print("Solteiro/a")
     case "C":
