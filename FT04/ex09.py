@@ -2,7 +2,7 @@
 introduzido pelo utilizador.
 '''
 
-tabuada = int(input("Introzuda o numero para a qual pretende obter a tabuada:"))
+tabuada = int(input("Introzuda o numero para a qual pretende obter a tabuada"))
 
 print("\nTabuada do número 5:")
 numero1 = 0
