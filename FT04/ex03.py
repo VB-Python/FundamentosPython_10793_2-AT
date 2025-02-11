@@ -45,3 +45,16 @@ while contador <=44:
 print(contador)
 media = soma / (contador-1)
 print(f"A média dos números introduzidos é {media}")
+
+#opçãp 3
+import statistics
+contador = 1
+lista = []
+while contador <=4:
+    numero = int(input(f"Introduza o {contador}º número: "))
+    lista.append(numero)
+    contador =contador + 1
+    
+media = statistics.mean(lista)
+print(lista)
+print(f"A média dos números introduzidos é {media}")
