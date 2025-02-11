@@ -11,3 +11,9 @@ while numero1 <= 10:
     print(f"{tabuada} x {numero1} = {multiplicacao}")
     numero1 = numero1 + 1
 
+
+i=1
+while i<=10:
+    print(f"{i} x 5\t {i*5}")
+    i=i+1
+
