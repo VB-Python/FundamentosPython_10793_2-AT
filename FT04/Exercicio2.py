@@ -10,7 +10,5 @@ primeiros números inteiros positivos e devolve o
 resultado para o ecã'''
 soma=0
 for i in range(1,11):
-   
-    soma+=i
-   
+    soma = soma + i
 print(soma)
