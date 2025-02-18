@@ -36,5 +36,29 @@ cores.pop()
 
 print(cores)
 
-print(len(lista))
-            
+print(len(cores))
+
+
+
+
+
+
+cores = ["amarelo","azul","branco","preto","verde"]
+print(cores)
+cores = ["amarelo","azul","branco","preto","verde"]
+print(cores[2])
+cores = ["amarelo","azul","branco","preto","verde"]
+cores[0]="vermelho"
+print(cores)
+cores = ['vermelho', 'azul', 'branco', 'preto', 'verde']
+cores.append("amarelo")
+print(cores)
+cores=['vermelho', 'azul', 'branco', 'preto', 'verde', 'amarelo']
+cores.insert(2,"roxo")
+print(cores)
+cores=['vermelho', 'azul', 'roxo', 'branco', 'preto', 'verde', 'amarelo']
+cores.pop()
+print(cores)
+cores=['vermelho', 'azul', 'roxo', 'branco', 'preto', 'verde']
+tamanho=len(cores)
+print(tamanho)
