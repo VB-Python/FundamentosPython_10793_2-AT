@@ -19,3 +19,20 @@ if idade_a_verificar in idades:
     print("\nA idade está na lista")
 else:
     print("\nNa lista, não existe ninguém com a tua idade")
+
+
+
+
+
+idades = [25, 15, 19, 22, 37, 78, 46, 2, 67]
+#Soma de idades menores de 18 anos
+print("Pessoas menores de idade: " , sum(1 for idade in idades if idade < 18))
+#Ordenar idades de forma decrescente
+idades.sort(reverse=True)
+print(idades)
+#Procurar uma idade na lista
+idade = int(input("Insira a idade que deseja procurar: "))
+if idade in idades:
+    print(f"A idade {idade} está na lista.")
+else:
+    print(f"Não existe ninguém com {idade} na lista.")
