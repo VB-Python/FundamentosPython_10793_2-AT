@@ -21,3 +21,5 @@ print(media)
 # c. Cria uma nova lista só com os inteiros
 lista_inteiros = [x for x in nums if type(x)== int]
 print(lista_inteiros)
+
+
