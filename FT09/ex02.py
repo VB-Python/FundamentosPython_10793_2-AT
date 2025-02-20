@@ -25,6 +25,6 @@ while True:
         case "d":
             disciplinas.popitem()
             print("Removi o último conjunto chave:valor")
-            print(menu)
+            print(disciplinas)
         case _:
             print("Escolha uma opção entre a e d")
