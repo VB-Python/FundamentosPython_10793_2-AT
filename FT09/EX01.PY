@@ -33,7 +33,7 @@ while True:
 
     match opcao:
         case "a":
-            print (f" O preço para um {(menu(x))} é de {(menu["Prego"])} €")
+            print (f" O preço para um Prego é de {(menu["Prego"])} €")
         case "b":
             for x in menu:
                 print(x)
