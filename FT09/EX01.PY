@@ -33,9 +33,9 @@ while True:
 
     match opcao:
         case "a":
-            print (f" O preço para um Prego é de {(menu.values())}")
+            print (f" O preço para um Prego é de {(menu["prego"])}")
         case "b":
-            for x in menu
+            for x in menu:
                 print(x)
         case "c":
             menu.update({"omolete": 5})
