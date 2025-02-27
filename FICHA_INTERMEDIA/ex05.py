@@ -5,7 +5,7 @@ soma = 0
 #import sys
 
 try: 
-    numero = int(input("Digite um número: "))
+    numero = int(input("Digite um número superior a 1: "))
     for j in range(1, numero+1):
     #print soma
         print ("j: ", j)
