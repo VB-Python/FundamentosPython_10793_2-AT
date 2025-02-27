@@ -2,13 +2,12 @@
 os números de 1 até esse mesmo número. Deves utilizar o tratamento de 
 erros.'''
 soma = 0
-import sys
+#import sys
 
 try: 
     numero = int(input("Digite um número: "))
     for j in range(1, numero+1):
     #print soma
-        
         print ("j: ", j)
         soma = soma + j
         print ("soma: ", soma)
