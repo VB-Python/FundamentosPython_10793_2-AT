@@ -1,5 +1,9 @@
+
+‘’’Escreva um programa que pede ao utilizador um número inteiro e trata 
+erros de entrada.’’’ 
 try: 
-numero = int(input("Digite um número: ")) 
-print("O dobro do número é:", numero * 2) 
+    numero = int(input("Digite um número inteiro: ")) 
+    print("Número inserido:", numero) 
 except ValueError: 
-print("Erro: Digite apenas números inteiros.") 
+    print("Erro: O valor deve ser um número inteiro.") 
+    
