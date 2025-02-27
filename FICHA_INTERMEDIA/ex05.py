@@ -3,7 +3,6 @@ os números de 1 até esse mesmo número. Deves utilizar o tratamento de
 erros.'''
 
 import sys
-j = 0
 soma = 0
 try: 
     numero = int(input("Digite um número: "))
