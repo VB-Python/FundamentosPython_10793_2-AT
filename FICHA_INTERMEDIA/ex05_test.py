@@ -17,3 +17,6 @@ except ValueError:
     print("Erro: O valor deve ser um número inteiro.") 
 except ValueError: 
     print("Erro: Digite um número inteiro válido.") 
+except 0: 
+    print("Erro: Número não é superior ou igual a 1.")
+    
