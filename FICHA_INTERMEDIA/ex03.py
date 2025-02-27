@@ -1,4 +1,5 @@
 '''Verifique se um ficheiro existe antes de o abrir.'''
+
 import os 
 try: 
     caminho = input("Digite o caminho do ficheiro: ") 
@@ -8,5 +9,5 @@ try:
             print(ficheiro.read()) 
     else: 
         print("Erro: O ficheiro não foi encontrado.")
-    except Exception as e: 
-        print("Erro inesperado:", e) 
+except Exception as e: 
+    print("Erro inesperado:", e) 
