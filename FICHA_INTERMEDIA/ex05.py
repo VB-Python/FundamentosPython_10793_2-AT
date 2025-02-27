@@ -4,12 +4,13 @@ erros.'''
 
 import sys
 j = 0
+soma = 0
 try: 
     numero = int(input("Digite um número: "))
-    for j in range(2, numero + 1):
+    for j in range(1, numero + 1):
     #print soma
-        j += j
-    print("A soma de todos os numeros de 1 a ", numero, " é: ", j)
+        j = j + soma
+    print("A soma de todos os numeros de 1 a ", numero, " é: ", soma)
     
 except Exception as e: 
     print("Erro inesperado:", e) 
