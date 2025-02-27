@@ -6,12 +6,12 @@ soma = 0
 #import sys
 
 try: 
-    while True
+    while True:
         numero = int(input("Digite um número superior a 1: "))
         match numero:
-            case numero == "0":
+            case 0:
                 print("Erro: Digite um número inteiro superior ou igual a 1.") 
-            case numero != "0":
+            case _:
                 for j in range(1, numero+1):
                 #print soma
                     print ("j: ", j)
@@ -19,7 +19,5 @@ try:
                     print ("soma: ", soma)
                 print("A soma de todos os numeros de 1 a ", numero, " é: ", soma)
             
-            except ValueError: 
-                print("Erro: O valor deve ser um número inteiro.") 
-            except ValueError: 
+except ValueError: 
                 print("Erro: Digite um número inteiro válido.") 
