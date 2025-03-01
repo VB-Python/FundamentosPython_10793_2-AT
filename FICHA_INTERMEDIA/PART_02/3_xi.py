@@ -1,4 +1,4 @@
-
+import exemplo.txt
 
 with open("exemplo.txt", "r") as ficheiro: 
     conteudo = ficheiro.read() 
