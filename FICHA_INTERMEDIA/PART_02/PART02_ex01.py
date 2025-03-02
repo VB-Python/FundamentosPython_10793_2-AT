@@ -46,7 +46,7 @@ with open("exemplo.txt", "r", encoding="utf-8") as ficheiro:
 
 import mmap 
 
-with open("exemplo.txt", "r+b", encoding="utf-8") as ficheiro:
+with open("exemplo.txt", "r+b") as ficheiro:
     conteudo = mmap.mmap(ficheiro.fileno(), 0) 
     #conteudo = ficheiro.read() 
     #print(conteudo)

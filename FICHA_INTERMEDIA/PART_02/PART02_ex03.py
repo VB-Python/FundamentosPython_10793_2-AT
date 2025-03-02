@@ -7,7 +7,7 @@ with open("novo_ficheiro.txt", "w") as ficheiro:
     ficheiro.write("Linha 3") '''
 
 
-with open("novo_ficheiro.txt", "w") as ficheiro: 
+with open("novo_ficheiro.txt", "w", encoding="utf-8") as ficheiro: 
     ficheiro.write("Linha 1")
     ficheiro.write("Linha 2") 
     ficheiro.write("Linha 3")
