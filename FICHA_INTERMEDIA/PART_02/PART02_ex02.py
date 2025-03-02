@@ -5,8 +5,11 @@ with open("exemplo.txt", "r") as ficheiro:
     for linha in ficheiro: 
         print(linha.strip()) '''
 
+import os
 
-with open("exemplo.txt", "r") as ficheiro: 
-    for linha in ficheiro: 
-        print(linha.strip())
-
+if os.path.exists("exemplo.txt"):
+    with open("exemplo.txt", "r") as ficheiro: 
+        for linha in ficheiro: 
+            print(linha.strip())
+else:
+    print("Erro: O ficheiro não foi encontrado.")
