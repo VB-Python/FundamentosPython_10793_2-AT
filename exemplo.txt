@@ -1,3 +1,4 @@
+Ficheiro "exemplo.txt"
 Parabéns 
 leu o ficheiro "ficheiro.read" 
-com sucesso
+com sucesso!
