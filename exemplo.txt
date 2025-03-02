@@ -1,4 +1,3 @@
-
 <<<<<<<<<<<<<<<<<<<<<<<
 Ficheiro "exemplo.txt"
 Parabéns 
