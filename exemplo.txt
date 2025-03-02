@@ -1,4 +1,4 @@
 Ficheiro "exemplo.txt"
-Parabéns 
-leu o ficheiro "ficheiro.read" 
+Parabens 
+leu o ficheiro
 com sucesso!

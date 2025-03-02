@@ -5,8 +5,11 @@ with open("exemplo.txt", "r") as ficheiro:
     conteudo = ficheiro.read() 
     print(conteudo) '''
 
+import os
 
-with open("exemplo.txt", "r") as ficheiro: 
-    conteudo = ficheiro.read() 
-    print(conteudo)
-
+if os.path.exists("exemplo.txt"):
+    with open("exemplo.txt", "r") as ficheiro: 
+        conteudo = ficheiro.read() 
+        print(conteudo)
+else:
+    print("Erro: O ficheiro não foi encontrado.")
