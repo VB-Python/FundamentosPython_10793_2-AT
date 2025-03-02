@@ -1,6 +1,7 @@
+
 <<<<<<<<<<<<<<<<<<<<<<<
 Ficheiro "exemplo.txt"
-Parabens 
+Parabéns 
 leu o ficheiro
 com sucesso!
 >>>>>>>>>>>>>>>>>>>>>>>
