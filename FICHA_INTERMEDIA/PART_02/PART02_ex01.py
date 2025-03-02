@@ -7,7 +7,7 @@ with open("exemplo.txt", "r") as ficheiro:
     
 
 
-try:
+
     
     if os.path.exists("exemplo.txt"):
         with open("exemplo.txt", "r") as ficheiro:
