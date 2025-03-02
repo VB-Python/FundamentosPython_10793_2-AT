@@ -8,7 +8,8 @@ with open("exemplo.txt", "r") as ficheiro:
 import os
 
 if os.path.exists("exemplo.txt"):
-    with open("exemplo.txt", "r") as ficheiro: 
+    with open("exemplo.txt", "r") as ficheiro:
+        ficheiro = ficheiro.readlines()
         for linha in ficheiro: 
             print(linha.strip())
 else:
