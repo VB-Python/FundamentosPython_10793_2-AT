@@ -5,12 +5,13 @@ with open("exemplo.txt", "r") as ficheiro:
     for linha in ficheiro: 
         print(linha.strip()) '''
 
-import os
+try:#prevenção de falhas em PART02_ex02, prevenção existencia de ficheiro.py em PART02_ex02
 
-if os.path.exists("exemplo.txt"):
     with open("exemplo.txt", "r") as ficheiro:
         ficheiro = ficheiro.readlines()
         for linha in ficheiro: 
             print(linha.strip())
-else:
-    print("Erro: O ficheiro não foi encontrado.")
+except FileNotFoundError: 
+    print("Erro: O ficheiro não existe.") 
+except Exception as e: 
+    print(f"Ocorreu um erro inesperado: {e}") 

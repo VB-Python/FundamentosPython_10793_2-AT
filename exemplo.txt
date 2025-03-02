@@ -1,4 +1,6 @@
+<<<<<<<<<<<<<<<<<<<<<<<
 Ficheiro "exemplo.txt"
 Parabens 
 leu o ficheiro
 com sucesso!
+>>>>>>>>>>>>>>>>>>>>>>>
