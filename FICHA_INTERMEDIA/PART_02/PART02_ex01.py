@@ -7,11 +7,11 @@ with open("exemplo.txt", "r") as ficheiro:
     
 
 
-
+import os
     
-    if os.path.exists("exemplo.txt"):
-        with open("exemplo.txt", "r") as ficheiro:
-            conteudo = ficheiro.read() 
-            print(conteudo)
-    else:
-        print("Erro: O ficheiro não foi encontrado.")
+if os.path.exists("exemplo.txt"):
+    with open("exemplo.txt", "r") as ficheiro:
+        conteudo = ficheiro.read() 
+        print(conteudo)
+else:
+    print("Erro: O ficheiro não foi encontrado.")
