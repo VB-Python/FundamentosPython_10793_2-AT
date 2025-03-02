@@ -15,6 +15,3 @@ try:
             print(conteudo)
     else:
         print("Erro: O ficheiro não foi encontrado.")
-
-
-
