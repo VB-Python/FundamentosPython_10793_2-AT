@@ -11,21 +11,24 @@ d) Exibir uma mensagem de sucesso ou erro informando se os ficheiros são
 idênticos. '''
 
 
-import DataSecure
-
+import DataSecure #criei um ficheiro "DataSecure.py"
+import hashlib 
+import os
 
 #alinea a)
 # Solicitar entrada do utilizador 
 ficheiro_origem = input("Digite o nome do ficheiro binário a copiar: ")
 #introduzi "grande_ficheiro.txt"
+
 #alinea b)
 ficheiro_destino = "copia_" + ficheiro_origem  # Criar nome para o ficheiro copiado 
 # Executar a cópia e validação 
-copiar_ficheiro_binario(ficheiro_origem, ficheiro_destino) 
+DataSecure.copiar_ficheiro_binario(ficheiro_origem, ficheiro_destino) 
 #constatei a criação de um novo ficheiro "copia_grande_ficheiro.txt"
 
+#alinea c) e d)
+#Passo feito dentro do ficheiro "DataSecure.py"
 
-#alinea c)
 
 
 
