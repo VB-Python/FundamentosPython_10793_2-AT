@@ -1,0 +1,8 @@
+
+grande_ficheiro.txt
+O método `chunking` 
+permite ler 
+ficheiros grandes 
+sem sobrecarregar 
+a RAM (ler e escrever 
+em partes – chuncks). 

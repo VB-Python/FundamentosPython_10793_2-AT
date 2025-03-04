@@ -61,26 +61,12 @@ with open("exemplo.txt", "r", encoding="utf-8") as ficheiro:
 
 
 
-import mmap 
+#import mmap 
 
-with open("exemplo.txt", "r+b") as ficheiro:
-    conteudo = mmap.mmap(ficheiro.fileno(), 0) 
+#with open("exemplo.txt", "r+b") as ficheiro:
+#    conteudo = mmap.mmap(ficheiro.fileno(), 0) 
     #conteudo = ficheiro.read() 
     #print(conteudo)
-    print(conteudo.readline()) 
-    conteudo.close()
-    
-    
-    
-    
-    
-       
-try:    #Prevenir falhas com tre-except – garante robustez contra falhas
-    
-    with open("exemplo.txt", "r", encoding="utf-8") as ficheiro: 
-        while chunk := ficheiro.read(1024):#Lê 1024 bytes de cada vez 
-            print(chunk) 
-except FileNotFoundError: 
-    print("Erro: O ficheiro não existe.") 
-except Exception as e: 
-    print(f"Ocorreu um erro inesperado: {e}")
+#   for linha in conteudo: 
+#                print(conteudo.readline()) 
+#    conteudo.close()
