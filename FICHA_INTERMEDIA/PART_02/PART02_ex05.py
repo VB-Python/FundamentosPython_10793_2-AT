@@ -11,7 +11,7 @@ d) Exibir uma mensagem de sucesso ou erro informando se os ficheiros são
 idênticos. '''
 
 
-import FICHA_INTERMEDIA.PART_02.DataSecure as DataSecure
+import DataSecure as DataSecure
 
 
 #alinea a)
