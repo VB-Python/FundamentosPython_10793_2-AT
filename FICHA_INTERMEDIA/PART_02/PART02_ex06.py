@@ -3,7 +3,17 @@ que leia o ficheiro CSV e mostre cada linha do mesmo.  '''
 
 import csv
 
-with open("ficheiro.csv", newline='', encoding="utf-8") as ficheiro: 
+#with open("ficheiro.csv", newline='', encoding="utf-8") as ficheiro: 
+#with open("ficheiro.csv", "r", encoding="utf-8") as ficheiro:
     leitor = csv.reader(ficheiro) 
     for linha in leitor: 
-        print(linha)# ficheiro CSV
+        print(linha) # ficheiro CSV
+
+
+with open("dados.csv", newline='', encoding="utf-8") as ficheiro: 
+    leitor = csv.DictReader(ficheiro)  # Converte cada linha num dicionário 
+    for linha in leitor: 
+        print(linha["Nome"], "-", linha["Idade"]) 
+
+
+
