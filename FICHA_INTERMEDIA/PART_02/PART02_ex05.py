@@ -11,7 +11,7 @@ d) Exibir uma mensagem de sucesso ou erro informando se os ficheiros são
 idênticos. '''
 
 
-import DataSecure as DataSecure
+import DataSecure
 
 
 #alinea a)
