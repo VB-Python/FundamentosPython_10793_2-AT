@@ -4,7 +4,24 @@ Criar um programa que leia um ficheiro de texto e exibir o seu conteúdo.
 with open("exemplo.txt", "r") as ficheiro: 
     conteudo = ficheiro.read() 
     print(conteudo) '''
+
+
+       
+try:    #Prevenir falhas com tre-except – garante robustez contra falhas
     
+    with open("exemplo.txt", "r", encoding="utf-8") as ficheiro: 
+        while chunk := ficheiro.read(1024):#Lê 1024 bytes de cada vez 
+            print(chunk) 
+except FileNotFoundError: 
+    print("Erro: O ficheiro não existe.") 
+except Exception as e: 
+    print(f"Ocorreu um erro inesperado: {e}")
+
+
+
+
+
+#outras formas que complementaram a anterior:
 
 
 import os   #Verificação da existência de ficheiros-Evitar erros ao tentar abrir ficheiros inexistentes
@@ -53,3 +70,17 @@ with open("exemplo.txt", "r+b") as ficheiro:
     print(conteudo.readline()) 
     conteudo.close()
     
+    
+    
+    
+    
+       
+try:    #Prevenir falhas com tre-except – garante robustez contra falhas
+    
+    with open("exemplo.txt", "r", encoding="utf-8") as ficheiro: 
+        while chunk := ficheiro.read(1024):#Lê 1024 bytes de cada vez 
+            print(chunk) 
+except FileNotFoundError: 
+    print("Erro: O ficheiro não existe.") 
+except Exception as e: 
+    print(f"Ocorreu um erro inesperado: {e}")
