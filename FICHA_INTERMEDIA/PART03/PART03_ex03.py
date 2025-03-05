@@ -1,6 +1,6 @@
 '''Vamos recuperar os dados armazenados na tabela
 1.- Explica o que faz cada linha de código acima
-2.- Executta o código e verifica os resultados'''
+2.- Executa o código e verifica os resultados'''
 
 
 import sqlite3

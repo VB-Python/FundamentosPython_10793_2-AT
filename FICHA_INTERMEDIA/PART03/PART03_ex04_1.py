@@ -1,4 +1,5 @@
-'''Atualizar dados'''
+'''Atualizar dados
+Atualiza salario de Pedro Santos em 3000.00'''
 
 
 
