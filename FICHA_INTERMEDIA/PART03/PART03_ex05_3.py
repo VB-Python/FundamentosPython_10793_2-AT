@@ -24,8 +24,6 @@ def menu():
             cargo = input("Cargo: ")
             salario = float(input("Salário: "))
             cursor.execute("INSERT INTO funcionarios (nome, cargo, salario) VALUES (?, ?, ?)", (nome, cargo, salario))
-            conn.commit()
-            conn.close()
         
         elif opcao == '2':
             cursor.execute("SELECT * FROM funcionarios")
