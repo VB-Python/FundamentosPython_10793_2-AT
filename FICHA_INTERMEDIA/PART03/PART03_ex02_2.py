@@ -10,8 +10,8 @@ conn = sqlite3.connect('empresa.db')
 cursor = conn.cursor()
 
 #Inserir funcionários na tabela
-cursor.execute("INSERT INTO funcionarios (nome, cargo, salario) VALUES ('Mario', 'Presidente', 6500)")
-cursor.execute("INSERT INTO funcionarios (nome, cargo, salario) VALUES ('Soares', 'Ministro', 7500)")
+cursor.execute("INSERT INTO funcionarios (nome, cargo, salario) VALUES ('Mario', 'Presidente', 2500)")
+cursor.execute("INSERT INTO funcionarios (nome, cargo, salario) VALUES ('Soares', 'Ministro', 2100)")
 
 #Guardar mudanças
 conn.commit()
