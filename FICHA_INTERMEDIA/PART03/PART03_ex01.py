@@ -21,7 +21,7 @@ try:
     #Exibir os resultados
     for funcionario in funcionarios:
     #exibe todos os funcionarios
-    print(funcionario)
+        print(funcionario)
 
     conexao.close()
 
