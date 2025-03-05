@@ -16,7 +16,8 @@ def menu():
         print("2. Listar funcionários")
         print("3. Atualizar salário")
         print("4. Eliminar funcionário")
-        print("5. Sair")
+        print("5. Salvar")
+        print("6. Sair")
         opcao = input("Escolha uma opção: ")
         
         if opcao == '1':
@@ -40,6 +41,10 @@ def menu():
             cursor.execute("DELETE FROM funcionarios WHERE nome = ?", (nome,))
         
         elif opcao == '5':
+            conn.commit()
+            #conn.close()
+        
+        elif opcao == '6':
             conn.commit()
             conn.close()
             break
