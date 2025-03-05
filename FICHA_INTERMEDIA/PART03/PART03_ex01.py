@@ -15,6 +15,15 @@ try:
 
     print("Base de dados criada e conectada com sucesso!")
 
+    #Consulta todos os funcionarios
+    cursor.execute("SELECT * FROM funcionarios")
+    #retorna todos os registos
+    funcionarios = cursor.fetchall()
+    #Exibir os resultados
+    for funcionario in funcionarios:
+    #exibe todos os funcionarios
+    print(funcionario)
+
     conexao.close()
 
 except FileNotFoundError: 

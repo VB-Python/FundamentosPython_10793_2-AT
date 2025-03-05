@@ -15,11 +15,24 @@ cursor.execute("INSERT INTO funcionarios (nome, cargo, salario) VALUES ('Soares'
 
 #Guardar mudanças
 conn.commit()
+
+
+
+#Consulta todos os funcionarios
+cursor.execute("SELECT * FROM funcionarios")
+#retorna todos os registos
+funcionarios = cursor.fetchall()
+
+#Exibir os resultados
+for funcionario in funcionarios:
+    #exibe todos os funcionarios
+    print(funcionario)
+
+
 #Fechar conexão
 conn.close()
+
 print("Dados atualizados com sucesso!")
-
-
 
 
 ''' Não consegui validar os nomes introduzidos com a função if
