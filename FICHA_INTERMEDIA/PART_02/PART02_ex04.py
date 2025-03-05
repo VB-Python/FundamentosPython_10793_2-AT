@@ -9,6 +9,7 @@ with open("novo_ficheiro.txt", "a") as ficheiro:
 try: 
     with open("novo_ficheiro.txt", "a", encoding="utf-8") as ficheiro: 
         ficheiro.write("\nLinha adicional")
+        
 except FileNotFoundError: 
     print("Erro: O ficheiro não existe.") 
 except Exception as e: 

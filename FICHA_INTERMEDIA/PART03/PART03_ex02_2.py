@@ -6,33 +6,41 @@
 
 import sqlite3
 
-conn = sqlite3.connect('empresa.db')
-cursor = conn.cursor()
+try:
+  
+  conn = sqlite3.connect('empresa.db')
+  cursor = conn.cursor()
 
-#Inserir funcionários na tabela
-cursor.execute("INSERT INTO funcionarios (nome, cargo, salario) VALUES ('Mario', 'Presidente', 2500)")
-cursor.execute("INSERT INTO funcionarios (nome, cargo, salario) VALUES ('Soares', 'Ministro', 2100)")
+  #Inserir funcionários na tabela
+  cursor.execute("INSERT INTO funcionarios (nome, cargo, salario) VALUES ('Mario', 'Presidente', 2500)")
+  cursor.execute("INSERT INTO funcionarios (nome, cargo, salario) VALUES ('Soares', 'Ministro', 2100)")
 
-#Guardar mudanças
-conn.commit()
-
-
-
-#Consulta todos os funcionarios
-cursor.execute("SELECT * FROM funcionarios")
-#retorna todos os registos
-funcionarios = cursor.fetchall()
-
-#Exibir os resultados
-for funcionario in funcionarios:
-    #exibe todos os funcionarios
-    print(funcionario)
+  #Guardar mudanças
+  conn.commit()
 
 
-#Fechar conexão
-conn.close()
 
-print("Dados atualizados com sucesso!")
+  #Consulta todos os funcionarios
+  cursor.execute("SELECT * FROM funcionarios")
+  #retorna todos os registos
+  funcionarios = cursor.fetchall()
+
+  #Exibir os resultados
+  for funcionario in funcionarios:
+      #exibe todos os funcionarios
+      print(funcionario)
+
+
+  #Fechar conexão
+  conn.close()
+
+  print("Dados atualizados com sucesso!")
+
+except FileNotFoundError: 
+    print("Erro: O ficheiro não existe.") 
+except Exception as e: 
+    print(f"Ocorreu um erro inesperado: {e}") 
+
 
 
 ''' Não consegui validar os nomes introduzidos com a função if
