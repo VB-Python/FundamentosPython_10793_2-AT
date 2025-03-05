@@ -17,8 +17,12 @@ cursor.execute("INSERT INTO funcionarios (nome, cargo, salario) VALUES ('Soares'
 conn.commit()
 #Fechar conexão
 conn.close()
+print("Dados atualizados com sucesso!")
 
 
+
+
+''' Não consegui validar os nomes introduzidos com a função if
 
 import sqlite3
 
@@ -27,18 +31,13 @@ cursor = conn.cursor()
 
 #Verificar nomes criados
 cursor.execute("SELECT * FROM funcionarios")
-nomes = cursor.fetchall() #retorna todos os registos
+funcionarios = cursor.fetchall()
 
-#Exibe os funcionarios
-#    for nome in nomes:
-        #if funcionario == "Mario" and funcionario == "Soares"
-           # print("Funcionários acrescentados com Sucesso")
-        #else
-           # print("Acrescentar 2 funcionários sem sucesso")
-#       print(nome)
-
-#Guardar mudanças
-conn.commit()
-#Fechar conexão
+#Exibir os resultados
+for funcionario in funcionarios:
+ 
+  if "Mario" in funcionario["nome"]:
+     print(funcionario)
+   
 conn.close()
-
+'''
