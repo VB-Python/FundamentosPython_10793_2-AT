@@ -10,7 +10,6 @@ banco_dados
 try:
     conexao = sqlite3.connect("empresa.db")
 
-
     cursor = conexao.cursor()
 
     print("Base de dados criada e conectada com sucesso!")
