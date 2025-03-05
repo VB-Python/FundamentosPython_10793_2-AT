@@ -1,5 +1,7 @@
 '''Inserir dados de funcionários'''
 
+import sqlite3
+
 conn = sqlite3.connect('empresa.db')
 cursor = conn.cursor()
 
