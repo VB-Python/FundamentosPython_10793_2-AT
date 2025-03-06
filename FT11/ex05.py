@@ -2,7 +2,7 @@
  essa mesma lista, mas sem elementos repetidos. '''
  
  
- import minhasfunc
+import minhasfunc
  
 elemento = input("Escreva uma frase: ")
 mês = minhasfunc.ex5(elemento)
