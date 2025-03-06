@@ -3,7 +3,8 @@
  
  
  import minhasfunc
+ 
 elemento = input("Escreva uma frase: ")
-z = minhasfunc.ex5(elemento)
-print(z)
+mês = minhasfunc.ex5(elemento)
+print(mês)
 

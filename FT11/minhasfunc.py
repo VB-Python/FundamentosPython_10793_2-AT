@@ -47,5 +47,11 @@ def ex5(elemento):
             elementos.append(p)
     return elementos
 ##########################################################
-
-
+def mesextenso(mês):
+    user = {
+        "01": "Janeiro",
+        "02": "Fevereiro",
+        "03": "Março"
+    }
+    return user[mês]
+##########################################################
