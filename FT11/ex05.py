@@ -2,4 +2,8 @@
  essa mesma lista, mas sem elementos repetidos. '''
  
  
- 
+ import minhasfunc
+elemento = input("Escreva uma frase: ")
+z = minhasfunc.ex5(elemento)
+print(z)
+

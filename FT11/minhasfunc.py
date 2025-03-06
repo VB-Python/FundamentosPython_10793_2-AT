@@ -40,4 +40,12 @@ def info_str(palavra="AEc"):
     
     return count_vogais
 ##########################################################
+def ex5(elemento):
+    elementos = []
+    for p in elemento:
+        if p not in elementos:
+            elementos.append(p)
+    return elementos
+##########################################################
+
 
