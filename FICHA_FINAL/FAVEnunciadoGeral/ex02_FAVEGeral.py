@@ -6,5 +6,5 @@ import funcao
 
 palavra = input("Contagem de vogais - Escreva uma palavra: ")
 vogais = funcao.conta_vogais(palavra)
-print(f"A palavra {palavra} tem {vogais} vogais")
+print(f"A palavra {palavra} tem {vogais} vogais.")
 

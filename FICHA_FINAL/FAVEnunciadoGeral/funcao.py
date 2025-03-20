@@ -1,16 +1,5 @@
 
 ##########################################################
-
-def info_str(palavra="AEc"):
-    count_vogais=0
-    for x in palavra:
-        if x in ["a", "e", "i", "o", "u","A", "E", "I", "O", "U"]:
-            count_vogais+=1
-    
-    return count_vogais
-
-##########################################################
-
 def conta_vogais(palavra):
     vogais = 'aeiou'
     count = 0
@@ -18,5 +7,18 @@ def conta_vogais(palavra):
         if letra in vogais:
             count += 1
     return count
-
+##########################################################
+def numeros(dados):
+    import statistics
+    user = list(map(int, dados.split()))
+    soma = sum(user)
+    conta_numeros = len(user)
+    media = statistics.mean(user)
+    return soma, conta_numeros, media
+##########################################################
+def dadoslista(valores):
+    soma = sum(valores)
+    compr = len(valores)
+    media = sum(valores)/len(valores)
+    return soma, compr, media
 ##########################################################
