@@ -15,15 +15,24 @@ try:
     if mes == 1 or mes == 3 or mes == 5 or mes == 7 or mes == 8 or mes == 10 or mes == 12:
         if dia < 32:
              # Exibindo os valores
-             # Coloquei True caso contrario dava erro
-            True
+            Dia = dia
+            Mes = mes
+            Ano = ano
+            print(f"Dia: {dia}")
+            print(f"Mês: {mes}")
+            print(f"Ano: {ano}")
         else:
             print(f"O mês {mes} não tem {dia} dias")
     #Trato todos os meses com 30 dias
     elif mes == 4 or mes == 6 or mes == 9 or mes == 11:
             if dia < 31:
                 # Exibindo os valores
-                True
+                Dia = dia
+                Mes = mes
+                Ano = ano
+                print(f"Dia: {dia}")
+                print(f"Mês: {mes}")
+                print(f"Ano: {ano}")
             else:
                 print(f"O mês {mes} não tem {dia} dias")
     #Trato Fevereiro, se Bissexto 29 dias, caso contrario 28 dias
@@ -32,34 +41,28 @@ try:
                 #print("O ano" , ano, "é Bissexto")
                 if dia < 30:
                     # Exibindo os valores
-                    True
+                    Dia = dia
+                    Mes = mes
+                    Ano = ano
+                    print(f"Dia: {dia}")
+                    print(f"Mês: {mes}")
+                    print(f"Ano: {ano}")
                 else:
                     print(f"Em {ano} o mês {mes} não tem {dia} dias")
             else:
                 #print("O ano" , ano, "não é Bissexto")
                 if dia < 29:
                     # Exibindo os valores
-                    True
+                    Dia = dia
+                    Mes = mes
+                    Ano = ano
+                    print(f"Dia: {dia}")
+                    print(f"Mês: {mes}")
+                    print(f"Ano: {ano}")
                 else:
                     print(f"Em {ano} o mês {mes} não tem {dia} dias")
-                    
+
 
 except ValueError:
     print("Erro: O formato da data deve ser DD/MM/AAAA e números inteiros.")
 
-
-    # Se não ocorrer nenhum erro, ele executará o cálculo e 
-    # exibirá o número de entradas, a soma e a média dos números fornecidos.
-else:
-    # Exibindo os valores, guardando em variaveis inteiras
-    Dia = int(dia)
-    Mes = int(mes)
-    Ano = int(ano)
-    print(f"\nDia: {Dia}")
-    print(f"Mês: {Mes}")
-    print(f"Ano: {Ano}")
-
-# Independentemente de ocorrer um erro ou não, 
-# o bloco finally será sempre executado, mostrando "Fim do processo."
-finally:
-    print("\nFim do processo.\n")
