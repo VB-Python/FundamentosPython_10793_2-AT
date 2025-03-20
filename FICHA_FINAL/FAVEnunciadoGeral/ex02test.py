@@ -4,8 +4,8 @@ palavra. '''
 import funcao
 
 palavra = input("Contagem de vogais - Escreva uma palavra: ")
-vogais = funcao.info_str(palavra="AEc"):
-print(vogais)
+vogais = funcao.conta_vogais(palavra):
+print(count)
 
 
 def conta_vogais(palavra):
