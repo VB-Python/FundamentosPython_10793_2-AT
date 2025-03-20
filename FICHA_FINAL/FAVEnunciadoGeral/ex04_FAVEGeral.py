@@ -6,3 +6,9 @@ chamada subarray
 d. Calcula a média dos valores do array subarray '''
 
 
+import numpy as np
+
+# Cria um array de números 1 com shape (8, 2)
+array_ones = np.ones((8, 2))
+
+print(array_ones)
